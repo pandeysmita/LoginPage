@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform()
+{
+    var username=document.myform.username.value;
+    var password=document.myform.password.value;
+    if(username==null || username==""){
+     alert("username must be filled")
+     return false;
+}
+     elseif(password.length>10){
+alert("Password must be filled");
+return false;
+     }}
+</script>
+<form action="Validationfor.html" method="=get" onsubmit="returnvalidateform"> 
+Username:<input type="text" name="Name">
+<br>
+Password:<input type="password" name="Password">
+<br>
+Submit:<input type="submit" value="Login">
+</form>
+</body>
+</html>
